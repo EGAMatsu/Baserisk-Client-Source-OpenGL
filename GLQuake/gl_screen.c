@@ -288,7 +288,7 @@ static void SCR_CalcRefdef (void)
 	if (cl.intermission)
 		size = 120;
 	else
-		size = scr_viewsize.value;
+		size = 120;
 
 	if (size >= 120)
 		sb_lines = 0;		// no status bar at all
@@ -346,12 +346,13 @@ Keybinding command
 */
 void SCR_SizeUp_f (void)
 {
-	Cvar_SetValue ("viewsize",scr_viewsize.value+10);
-	vid.recalc_refdef = 1;
+	//Cvar_SetValue ("viewsize",scr_viewsize.value+10);
+	//vid.recalc_refdef = 1;
 }
 
 
 /*
+* 
 =================
 SCR_SizeDown_f
 
@@ -360,8 +361,8 @@ Keybinding command
 */
 void SCR_SizeDown_f (void)
 {
-	Cvar_SetValue ("viewsize",scr_viewsize.value-10);
-	vid.recalc_refdef = 1;
+	//Cvar_SetValue ("viewsize",scr_viewsize.value-10);
+	//vid.recalc_refdef = 1;
 }
 
 //============================================================================
@@ -924,7 +925,7 @@ void SCR_UpdateScreen (void)
 	{
 		if (crosshair.value)
 			Draw_Character (scr_vrect.x + scr_vrect.width/2, scr_vrect.y + scr_vrect.height/2, '+');
-
+		Cvar_Set("viewsize", "120");
 		SCR_DrawUI();
 		SCR_DrawRam ();
 		SCR_DrawNet ();
