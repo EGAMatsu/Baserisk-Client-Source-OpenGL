@@ -1,0 +1,2 @@
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\ClientGL\GLQuake\HandmadeQuakeGL\Debug\HandmadeQuakeGL.exe
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\ClientGL\GLQuake\HandmadeQuakeGL\Debug\HandmadeQuakeGL.pdb
